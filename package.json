@@ -1,0 +1,43 @@
+{
+  "name": "cms-app",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "debug": "node_modules/nodemon/bin/nodemon.js --inspect=0.0.0.0:9228 develop.js",
+    "buildAndDebug": "rm -rf .cache; rm -rf build; strapi build; node_modules/nodemon/bin/nodemon.js --inspect=0.0.0.0:9228 develop.js"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "strapi": "3.0.0-beta.17.4",
+    "mongodb": "^3.0.1",
+    "strapi-admin": "3.0.0-beta.17.4",
+    "strapi-hook-mongoose": "3.0.0-beta.17.4",
+    "strapi-plugin-content-manager": "3.0.0-beta.17.4",
+    "strapi-plugin-content-type-builder": "3.0.0-beta.17.4",
+    "strapi-plugin-documentation": "3.0.0-beta.17.4",
+    "strapi-plugin-email": "3.0.0-beta.17.4",
+    "strapi-plugin-graphql": "3.0.0-beta.17.4",
+    "strapi-plugin-upload": "3.0.0-beta.17.4",
+    "strapi-plugin-users-permissions": "3.0.0-beta.17.4",
+    "strapi-utils": "3.0.0-beta.17.4"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "43b4a17f-0025-46f1-be99-e93c27b03bf7"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
