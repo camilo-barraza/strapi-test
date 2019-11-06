@@ -12,7 +12,7 @@
     "buildAndDebug": "rm -rf .cache; rm -rf build; strapi build; node_modules/nodemon/bin/nodemon.js --inspect=0.0.0.0:9228 develop.js",
     "dev-dump-db-config": "node ./db-sync/dev-dump-db-config.js"
   },
-  "pre-commit": [ "lint" ],
+  "pre-commit": [ "dev-dump-db-config" ],
   "devDependencies": {
     "nodemon": "^1.19.4",
     "pre-commit": "^1.2.2"
